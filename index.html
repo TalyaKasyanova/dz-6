@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="./slyles/style.css">
+</head>
+
+<body>
+
+    <div class="first-form">
+        <form class="form">
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Повне імʼя</span>
+                    <span class="form-input-span">
+                        <input type="text" class="form-input" name="user_name">
+                    </span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Email</span>
+                    <span class="form-input-span">
+                        <input type="email" class="form-input" title="" name="user_email">
+                    </span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Пароль</span>
+                    <span class="form-input-span">
+                        <input type="password" class="form-input" title="" name="user_password">
+                    </span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Пароль ще раз</span>
+                    <span class="form-input-span">
+                        <input type="password" class="form-input" title="" name="user_password">
+                    </span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Стать</span>
+                    <div>
+                        <input type="radio" id="fame" name="sex" value="fame">
+                        <label for="fame">жіноча</label>
+                        <input type="radio" id="men" name="sex" value="men">
+                        <label for="men">чоловіча</label>
+                    </div>
+
+                </label>
+            </div>
+            <div class="form-box flex">
+                <label class="form-label" for="course">Курс</label>
+                <select class="form-input form-input-select" name="course" id="course">
+                    <option class="form-input-span">Виберіть курс</option>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="PM">Project Management</option>
+                    <option value="QA">QA Manual</option>
+                </select>
+            </div>
+            <div class="form-box">
+                <label class="form-label">
+                    <span class="form-caption">Повна адреса</span>
+                    <textarea name="user_message" class="form-message"
+                        placeholder="Країна, регіон, місто, вулиця, будинок, квартира"></textarea>
+                </label>
+            </div>
+            <div class="form-checkbox">
+                <input type="checkbox" class="form-own-checkbox visually-hidden" id="accept-checkbox"
+                    name="accept-policy" required>
+                <label for="accept-checkbox" class="checkbox">
+                    Я погоджуюся з обробкої персональних даних </label>
+            </div>
+            <div class="flex">
+                <button class="form-sumbit">Очистити форму</button>
+                <button type="submit" class="form-sumbit">Відправити</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
